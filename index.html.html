@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Estratégico - Logística Satvicos</title>
+    
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Carga de Font Awesome (para iconos) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <!-- Configuración de Tailwind y Fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'satvicos-blue': '#0a4a8f',
+                        'satvicos-green': '#2a9d8f',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+            background-image: linear-gradient(135deg, #f4f7f6 0%, #e9f0ee 100%);
+        }
+        .card {
+            transition: all 0.3s ease-in-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-8 max-w-7xl">
+
+        <!-- Encabezado Principal -->
+        <header class="text-center mb-10 sm:mb-16">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-satvicos-blue mb-2">
+                Estructura de Sinergia
+            </h1>
+            <p class="text-xl sm:text-2xl text-satvicos-green font-medium">
+                Departamento de Logística - Alimentos Satvicos
+            </p>
+        </header>
+
+        <!-- Contenedor de las Tarjetas de Perfil (3 columnas en desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+            <!-- Tarjeta 1: Daniela Vaamonde -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-handshake"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Daniela Vaamonde</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Gestora de Proveedores y Recursos</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-truck text-satvicos-green w-4 mr-1"></i> Fletes, Baremo y Gasoil</li>
+                            <li><i class="fa-solid fa-route text-satvicos-green w-4 mr-1"></i> Status Despachos Rutas</li>
+                            <li><i class="fa-solid fa-ship text-satvicos-green w-4 mr-1"></i> Proyecto "BUQUE" y Empaquetadoras</li>
+                            <li><i class="fa-solid fa-file-contract text-satvicos-green w-4 mr-1"></i> Guías SUNAGRO (Puerto)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Backup Primario: Olgleidys H.</span> (Estratégico).<br>
+                            <span class="font-semibold">Backup Secundario: Carlos R.</span> (Transaccional).
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Autonomía en gestión de servicios y proyectos externos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Olgleidys Hernandez -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-calculator"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Olgleidys Hernandez</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Analista Control Financiero</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-file-invoice-dollar text-satvicos-green w-4 mr-1"></i> OGP, Caja Chica y Control Insumos</li>
+                            <li><i class="fa-solid fa-user-clock text-satvicos-green w-4 mr-1"></i> Nómina y Horas Extras (Guatire)</li>
+                            <li><i class="fa-solid fa-wrench text-satvicos-green w-4 mr-1"></i> Mantenimiento (Maquinaria, Camión)</li>
+                            <li><i class="fa-solid fa-chart-line text-satvicos-green w-4 mr-1"></i> KPIs y Análisis de Costo de Almacenaje</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Backup Primario: Daniela V.</span> (Ejecución de reportes y pagos).
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Gestión por Objetivos. Foco en precisión analítica de datos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Carlos Rodriguez -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-warehouse"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Carlos Rodriguez</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Admin. Operaciones (Guatire)</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-scale-balanced text-satvicos-green w-4 mr-1"></i> Balance de Masas (Registro Auxiliar)</li>
+                            <li><i class="fa-solid fa-right-left text-satvicos-green w-4 mr-1"></i> Admin. y Doc. Despachos (Guatire)</li>
+                            <li><i class="fa-solid fa-clipboard-check text-satvicos-green w-4 mr-1"></i> SUNAGRO (Pagos y Guías - Guatire y Deudas)</li>
+                            <li><i class="fa-solid fa-file-archive text-satvicos-green w-4 mr-1"></i> Archivo Físico y Digital</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Backup Primario: Jesus E.</span> (SUNAGRO).<br>
+                            <span class="font-semibold">Backup Secundario: Marcel M.</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Gestión por Proceso. Estricto cumplimiento de checklists.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Marcel Mendoza -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-route"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Marcel Mendoza</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Gestor Op. Directas y Proyectos</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-magnifying-glass-chart text-satvicos-green w-4 mr-1"></i> Auditoría Integral: Inventarios, Masas y Profit</li>
+                            <li><i class="fa-solid fa-money-bill-trend-up text-satvicos-green w-4 mr-1"></i> Inventario para Flujo de Caja</li>
+                            <li><i class="fa-solid fa-calendar-check text-satvicos-green w-4 mr-1"></i> Cierre de Mes (Operativo)</li>
+                            <li><i class="fa-solid fa-star text-satvicos-green w-4 mr-1"></i> Contratos Directiva y Costal Directos</li>
+                            <li><i class="fa-solid fa-laptop-code text-satvicos-green w-4 mr-1"></i> Reporte de Errores Profit (IT)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Backup Primario: Daniela V.</span> (Proyectos).<br>
+                            <span class="font-semibold">Backup Secundario: Carlos R.</span> (Operaciones).
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Disciplinado y Estricto. Vigilante de la precisión documental.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: Jesus Espinoza -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-person-running"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Jesus Espinoza</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Operativo (Guatire)</p>
+                        </div>
+                    </div>
+            
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-boxes-packing text-satvicos-green w-4 mr-1"></i> Despachos Físicos (Guatire)</li>
+                            <li><i class="fa-solid fa-box-open text-satvicos-green w-4 mr-1"></i> Proyectos "Combos" y "Costal" (Guatire)</li>
+                            <li><i class="fa-solid fa-clipboard-list text-satvicos-green w-4 mr-1"></i> Toma Física de Inventario (Guatire)</li>
+                            <li><i class="fa-solid fa-spray-can-sparkles text-satvicos-green w-4 mr-1"></i> Dosificación Fumigaciones (Guatire)</li>
+                        </ul>
+                    </div>
+            
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Backup Primario: Carlos R.</span> (Supervisión).<br>
+                            <span class="font-semibold">Backup Secundario: Personal Almacén.</span>
+                        </p>
+                    </div>
+            
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Foco en cumplimiento operativo y seguridad física.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6: Paola Landa -->
+            <div class="card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl text-satvicos-blue mr-4"><i class="fa-solid fa-clipboard-check"></i></span>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">Paola Landa</h2>
+                            <p class="text-lg font-semibold text-satvicos-blue">Control de Calidad</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="font-semibold text-gray-700 mb-2 border-b pb-1">Responsabilidades Clave</h3>
+                        <ul class="list-inside text-gray-600 text-sm space-y-1">
+                            <li><i class="fa-solid fa-check-double text-satvicos-green w-4 mr-1"></i> Toma Física Inventario Merma y Cuarentena</li>
+                            <li><i class="fa-solid fa-box-open text-satvicos-green w-4 mr-1"></i> Revisión de Productos en Recepción</li>
+                            <li><i class="fa-solid fa-file-signature text-satvicos-green w-4 mr-1"></i> Control de Cuadrantes, Mermas e Incidencias</li>
+                            <li><i class="fa-solid fa-hard-hat text-satvicos-green w-4 mr-1"></i> Seguimiento Seguridad Industrial</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5">
+                        <h3 class="font-bold text-satvicos-blue mb-2"><i class="fa-solid fa-users mr-2"></i> Plan de Continuidad</h3>
+                        <p class="text-sm text-gray-700">
+                            <span class="font-semibold">Apoyo Temporal: Daniela V.</span><br>
+                            (Supervisión de protocolos de recepción y despacho).
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h3 class="font-bold text-satvicos-green mb-2"><i class="fa-solid fa-bullseye mr-2"></i> Perfil Profesional</h3>
+                        <p class="text-sm text-gray-700 font-medium">Cumplimiento operativo y corrección inmediata de incidencias.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin del grid -->
+
+        <footer class="text-center mt-12 sm:mt-20 pt-8 border-t border-gray-300">
+            <p class="text-sm text-gray-500">
+                Panel Estratégico de Logística - Alimentos Satvicos | Actualizado Enero 2026
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
